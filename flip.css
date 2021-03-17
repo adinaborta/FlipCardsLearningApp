@@ -1,0 +1,87 @@
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+    transition-duration: 1s;
+
+}
+
+h1::selection, h2::selection, div::selection{
+    background: transparent;
+}
+
+main{
+   width: 100vw;
+   position: relative;
+   height: 100vh;
+   display: block;
+   padding: 50px 0px;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+}
+
+div.front {
+    width: 100%;
+    height: 100%;
+}
+
+div.front, div.back{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 25px;
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+div.back {
+    position: absolute;
+    top: 50px;
+    transform: rotateY(90deg);
+}
+
+div.back h1{
+    font-size: 150px;
+    margin:0;
+    padding: 25px 0;
+}
+
+.previous, .next{
+    position: absolute;
+    font-size: x-large;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.previous:hover, .next:hover{
+    text-shadow: rgba(99, 99, 99, 0.459) 0px 0px 2px;
+}
+
+.previous{
+    bottom: 50px;
+    left: 100px;
+}
+
+.next{
+    bottom: 50px;
+    right: 100px;
+    transition: opacity 0.4s;
+}
+
+
+
+
+
+
