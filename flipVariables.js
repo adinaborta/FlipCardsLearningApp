@@ -690,8 +690,12 @@ let backgrounds = [
 front.style.transition = "transform 0.3s ease-in-out"
 back.style.transition = "transform 0.3s 0.3s ease-in-out"
 
+if(JSON.parse(localStorage.getItem("repeat")) == null){
+    let repeat = new Array();
+    localStorage.setItem("i", 0);
+    localStorage.setItem("repeat", JSON.stringify(repeat))
+}
+
 setBkgF(); setWordF(); setBkgB(), setWordB();
 
-// let repeat = new Array();
-// localStorage.setItem("i", 0);
-// localStorage.setItem("repeat", JSON.stringify(repeat))
+

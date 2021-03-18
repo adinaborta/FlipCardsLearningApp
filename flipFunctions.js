@@ -103,7 +103,7 @@ function setWordF(){
 
         h1FRONT.innerHTML = words[wordNr][english];
         // h1FRONT.innerHTML = wordNr;
-        console.log(repeat, i, repeat[i])
+        console.log(repeat, i, repeat[i-1])
     }
     else{
         utilityNext();
